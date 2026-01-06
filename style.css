@@ -7,13 +7,6 @@
   box-sizing: border-box;
 }
 
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-
-
 :root {
   /* Modern Color Palette - Professional & Rich */
   --primary-blue: #0066ff; /* Vibrant blue - tech/professional */
@@ -1003,11 +996,71 @@ body {
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 0 16px;
+
+  /* HERO → DASHBOARD FLOW FIX */
+  .hero {
+    padding: 64px 0 80px;
   }
-  .nav {
-    flex-wrap: wrap;
+
+  .dashboard-wrapper {
+    margin: 0 0 64px;
+  }
+
+  /* NAV */
+  .nav-menu {
+    display: none;
+  }
+
+  /* SIDEBAR → MOBILE TAB BAR */
+  .sidebar {
+    position: sticky;
+    top: 64px;
+    z-index: 20;
+
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+
+    padding: 12px;
+    background: rgba(26, 28, 34, 0.95);
+    backdrop-filter: blur(12px);
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sidebar-logo {
+    display: none;
+  }
+
+  .sidebar-menu {
+    flex-direction: row;
+    gap: 6px;
+  }
+
+  .sidebar-item {
+    padding: 10px 14px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .text-nav {
+    font-size: 12px;
+  }
+
+  /* DASHBOARD HEADER */
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 16px;
   }
 
   .dashboard-actions {
@@ -1015,113 +1068,133 @@ body {
     justify-content: space-between;
   }
 
-  .user-info {
-    padding: 6px 12px 6px 6px;
-    gap: 8px;
-  }
-
   .user-name {
-    display: none; /* keeps UI clean on mobile */
-  }
-
-  .nav-menu {
     display: none;
   }
 
-  .dashboard-layout {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    flex-direction: row;
-    padding: 16px;
-    gap: 16px;
-    overflow-x: auto;
-  }
-
-  .sidebar-logo {
-    padding: 0;
-  }
-
-  .sidebar-menu {
-    flex-direction: row;
-    gap: 4px;
-  }
-
-  .sidebar-item {
-    padding: 12px;
-    white-space: nowrap;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .dashboard-header {
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-  }
-
+  /* SEARCH */
   .search-box {
     width: 100%;
   }
 
-  .dashboard-actions {
-    align-self: flex-end;
+  /* DASHBOARD CONTENT FLOW */
+  .dashboard-content {
+    grid-template-columns: 1fr;
   }
 
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
+  /* STATS */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .btn {
-    width: 100%;
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 480px) {
-  .heading-hero {
-    font-size: 36px;
-  }
-
-  .text-subtitle {
-    font-size: 18px;
-  }
-  .hero-content {
-    padding: 0 12px;
-  }
-
-  .heading-hero {
-    line-height: 1.2;
-  }
-
-  .dashboard-wrapper {
-    margin: -40px 0 80px;
-    padding: 0 12px;
-  }
-
+  /* CHART */
   .chart-area {
-    height: 200px;
+    height: 180px;
+    gap: 8px;
+  }
+
+  .chart-y-axis {
+    display: none;
+  }
+
+  .candlestick {
+    width: 14px;
+  }
+
+  .chart-periods {
+    flex-wrap: wrap;
+    gap: 6px;
   }
 
   .price-indicator {
     display: none;
   }
-  .dashboard-actions {
+  .sidebar {
+    width: 100% !important;
+    min-width: 100%;
+  }
+  .dashboard,
+  .dashboard-layout {
+    overflow: visible;
+  }
+
+  .sidebar-item {
+    flex-shrink: 0;
+  }
+  .dashboard-layout {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* HERO */
+  .heading-hero {
+    font-size: 36px;
+    line-height: 1.15;
+  }
+
+  .text-subtitle {
+    font-size: 17px;
+  }
+
+  /* BUTTONS */
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* DASHBOARD WRAPPER */
+  .dashboard-wrapper {
+    padding: 0 12px;
+    margin-bottom: 48px;
+  }
+
+  /* STATS */
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 14px;
     gap: 12px;
   }
 
-  .notification-wrapper {
-    padding: 6px;
+  .stat-icon-wrapper {
+    width: 40px;
+    height: 40px;
   }
 
-  .user-avatar {
-    width: 28px;
-    height: 28px;
+  .text-stat-value {
+    font-size: 20px;
+  }
+
+  /* CHART HEADER */
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .crypto-selector {
+    padding: 6px 12px;
+  }
+
+  /* CHAIN ALLOCATION */
+  .chain-header {
+    gap: 8px;
+  }
+
+  .chain-name {
+    font-size: 13px;
+  }
+
+  .chain-value {
+    font-size: 11px;
+  }
+
+  .chain-percentage {
+    font-size: 11px;
   }
 }
 
