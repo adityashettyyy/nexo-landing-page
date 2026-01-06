@@ -1,0 +1,23 @@
+<svg viewBox="0 0 18.3333 18.3333" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"><defs><linearGradient id="paint5_linear_4_1581" x1="13.588399999999865" y1="4.572299999999927" x2="8.208399999999983" y2="14.88530000000003" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00FFA3"/>
+<stop offset="1" stop-color="#DC1FFF"/>
+</linearGradient><linearGradient id="paint6_linear_4_1581" x1="11.238399999999956" y1="3.3432999999999993" x2="5.848399999999856" y2="13.656299999999987" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00FFA3"/>
+<stop offset="1" stop-color="#DC1FFF"/>
+</linearGradient><linearGradient id="paint7_linear_4_1581" x1="12.408400000000029" y1="3.953300000000013" x2="7.018399999999929" y2="14.266300000000001" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00FFA3"/>
+<stop offset="1" stop-color="#DC1FFF"/>
+</linearGradient><clipPath id="clip11_4_1581">
+<rect width="18.3333" height="18.3333" fill="white" transform="translate(0.15840000000002874, 0.14229999999997744)"/>
+</clipPath><clipPath id="clip12_4_1581">
+<rect width="9.74651" height="7.63889" fill="white" transform="translate(4.738399999999956, 5.490299999999934)"/>
+</clipPath></defs><g id="logo / 24 / solona" clip-path="url(#clip11_4_1581)">
+<g id="Layer_x0020_1_3">
+<path id="Vector_37" d="M18.2184,11.5283c-1.22,4.911 -6.2,7.901 -11.11,6.676c-4.91,-1.225 -7.9,-6.2 -6.67,-11.111c1.22,-4.912 6.19,-7.901 11.11,-6.677c4.91,1.225 7.9,6.2 6.67,11.112v0z" fill="#CFFFF3"/>
+</g>
+<g id="solana-sol-logo 1" clip-path="url(#clip12_4_1581)">
+<path id="Vector_38" d="M6.3284,11.3213c0.06,-0.059 0.14,-0.093 0.22,-0.093h7.78c0.15,0 0.22,0.172 0.12,0.272l-1.54,1.537c-0.06,0.059 -0.14,0.093 -0.23,0.093h-7.78c-0.14,0 -0.21,-0.172 -0.11,-0.272z" fill="url(#paint5_linear_4_1581)"/>
+<path id="Vector_39" d="M6.3284,5.5833c0.06,-0.059 0.14,-0.093 0.22,-0.093h7.78c0.15,0 0.22,0.172 0.12,0.272l-1.54,1.537c-0.06,0.059 -0.14,0.093 -0.23,0.093h-7.78c-0.14,0 -0.21,-0.171 -0.11,-0.272z" fill="url(#paint6_linear_4_1581)"/>
+<path id="Vector_40" d="M12.9084,8.4343c-0.06,-0.059 -0.14,-0.093 -0.23,-0.093h-7.78c-0.14,0 -0.21,0.171 -0.11,0.272l1.54,1.537c0.06,0.058 0.14,0.093 0.22,0.093h7.78c0.15,0 0.22,-0.172 0.12,-0.272z" fill="url(#paint7_linear_4_1581)"/>
+</g>
+</g></svg>
